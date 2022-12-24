@@ -399,3 +399,5 @@ FodyWeavers.xsd
 
 opencv/*
 *.dll
+*.docx
+*.pdf
