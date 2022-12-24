@@ -14,7 +14,5 @@ int main()
 
     cv::waitKey();
 
-    cv::destroyWindow("Image:");
-
     return 0;
 }
