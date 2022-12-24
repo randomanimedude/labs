@@ -17,7 +17,7 @@ namespace Ants
         public static void Main(string[] args)
         {
             int numCities = 20;
-            int numAnts = 10;
+            int numAnts = 2;
             int maxIter = 1000;
 
             int[][] dists = MakeGraphDistances(numCities);
@@ -361,19 +361,12 @@ namespace Ants
             {
                 Console.Write(i + ": [ ");
 
-                for (int j = 0; j <= 3; j++)
+                for (int j = 0; j < ants[i].Length; j++)
                 {
                     Console.Write(ants[i][j] + " ");
                 }
 
-                Console.Write(". . . ");
-
-                for (int j = ants[i].Length - 4; j <= ants[i].Length - 1; j++)
-                {
-                    Console.Write(ants[i][j] + " ");
-                }
-
-                Console.Write("] len = ");
+                Console.Write("] довжина = ");
                 double len = Length(ants[i], dists);
                 Console.Write(len.ToString());
                 Console.WriteLine("");
